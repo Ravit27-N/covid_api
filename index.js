@@ -33,9 +33,9 @@ app.get('/',(req,res)=>{
 const startServer = async () => {
   try {
     await connectDB(process.env.DB_URL);
-    app.listen(3001,()=>{
-      console.log('Server is running on http://localhost:3001/');
-    })
+    // app.listen(3001,()=>{
+    //   console.log('Server is running on http://localhost:3001/');
+    // })
   } catch (error) {
     console.log("Error Connection database: "+error)
   }
